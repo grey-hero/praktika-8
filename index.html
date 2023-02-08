@@ -14,26 +14,40 @@
 <div class="container">
     <div class="row game-card align-items-center">
         <div class="col col-md-4 offset-md-4">
-            <div class="card text-center">
+            <div class="card text-center" id="gamebox">
                 <div class="card-header">
                     <p class="m-0">Вопрос №<span id="orderNumberField">5</span></p>
                 </div>
-                <div class="card-body">
+                <div class="card-body game_start ">
+                    <div class="row no-gutters">
+                        <div class="col-12">
+                            <h3>Укажите диапозон от -999 до 999</h3>
+                            <br><p>Минимальное число</p>
+                            <input type="number" id="minVal">
+                            <br><p>Максимально число</p>
+                            <input type="number" id="maxVal">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body game_go d-none">
                     <div class="row no-gutters">
                         <div class="col">
                             <h3 class="card-title m-0"><span id="answerField">Вы загадали число 5?</span></h3>
                         </div>
                     </div>
                 </div>
-                <div class="card-body">
+                <div class="card-body game_go d-none">
                     <div class="btn-group">
                         <button class="btn btn-info" id="btnLess">&#129047;<br>меньше</button>
                         <button class="btn btn-success btn-lg" id="btnEqual">Верно!</button>
                         <button class="btn btn-info" id="btnOver">больше<br>&#129045;</button>
                     </div>
                 </div>
-                <div class="card-footer">
+                <div class="card-footer game_go d-none">
                     <button class="btn btn-link" id="btnRetry">Заново</button>
+                </div>
+                <div class="card-footer game_start">
+                    <button class="btn btn-link" id="btnStart">Начать</button>
                 </div>
             </div>
         </div>

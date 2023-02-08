@@ -2,3 +2,7 @@
     height: 100vh;
     font-family: 'Open Sans', monospace;
 }
+.win_class{
+    border-color: red;
+    background-color: rgb(255, 179, 151);
+}
